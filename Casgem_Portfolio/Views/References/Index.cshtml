@@ -1,0 +1,23 @@
+﻿@model List<Casgem_Portfolio.Models.Entities.TblReference>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_PortfolioAdminLayout.cshtml";
+}
+
+
+@foreach (var item in Model)
+{
+
+    <div class="card border-success mb-2" style="max-width: 18rem;">
+        <div class="card-header">@item.NameSurname</div>
+        <div class="card-body text-success">
+            <h5 class="card-title">@item.Title</h5>
+            <p class="card-text">@item.PhoneNumber, @item.Email</p>
+        </div>
+        <div class="align-self-lg-center">
+            <a href="/References/Delete/@item.ReferenceID" class="btn btn-outline-danger">Sil</a>
+            <a href="/References/Update/@item.ReferenceID" class="btn btn-outline-success">Güncelle</a>
+        </div>
+    </div>
+}
+
