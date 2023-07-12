@@ -5,6 +5,10 @@
     {
       "library": "bootstrap@5.3.0",
       "destination": "Lib/bootstrap/"
+    },
+    {
+      "library": "limonte-sweetalert2@11.7.12",
+      "destination": "Lib/limonte-sweetalert2/"
     }
   ]
 }

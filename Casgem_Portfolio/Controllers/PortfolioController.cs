@@ -14,6 +14,8 @@ namespace Casgem_Portfolio.Controllers
         // GET: Portfolio
         public ActionResult Index()
         {
+            var items = db.TblSkills.ToList();
+           ViewBag.skillsArray = items.Select(x => x.Name).ToArray();
             return View();
         }
         public PartialViewResult PartialHead()
@@ -43,6 +45,14 @@ namespace Casgem_Portfolio.Controllers
             ViewBag.totalMessage = db.TblMessage.Count();
             ViewBag.totalThanksMessage = db.TblMessage.Where(x => x.MessageSubject.Contains("Teşekkür")).Count();
             ViewBag.happyCustomer = 12;
+            return PartialView();
+        }
+        public PartialViewResult PartialSelfInfo()
+        {
+            return PartialView();
+        }
+        public PartialViewResult PartialVideo()
+        {
             return PartialView();
         }
     }
