@@ -27,126 +27,7 @@ Author URL: http://w3layouts.com
     <!-- //home page second section -->
     @Html.Partial("PartialSelfInfo")
     <!-- home page services section -->
-    <section class="w3l-services">
-        <div class="blog py-5" id="services">
-            <div class="container py-lg-5">
-                <h5 class="title-small text-center">Services</h5>
-                <h3 class="title-big text-center mb-sm-5 mb-4">What I do for you</h3>
-                <div class="row">
-                    <div class="col-md-12 mx-auto pr-2">
-                        <div class="owl-two owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="card">
-                                    <div class="box-wrap">
-                                        <div class="icon">
-                                            <span class="fa fa-pencil-square-o"></span>
-                                        </div>
-                                        <h4 class="number">01</h4>
-                                        <h4><a href="#url">UI/UX Design</a></h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
-                                            doloret quas saepe autem, dolor set.
-                                        </p>
-                                        <a href="#read" class="read">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="card">
-                                    <div class="box-wrap">
-                                        <div class="icon">
-                                            <span class="fa fa-laptop"></span>
-                                        </div>
-                                        <h4 class="number">02</h4>
-                                        <h4><a href="#url">Web Development</a></h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
-                                            doloret quas saepe autem, dolor set.
-                                        </p>
-                                        <a href="#read" class="read">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="card">
-                                    <div class="box-wrap">
-                                        <div class="icon">
-                                            <span class="fa fa-area-chart"></span>
-                                        </div>
-                                        <h4 class="number">03</h4>
-                                        <h4><a href="#url">Research & Analysis</a></h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
-                                            doloret quas saepe autem, dolor set.
-                                        </p>
-                                        <a href="#read" class="read">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="card">
-                                    <div class="box-wrap">
-                                        <div class="icon">
-                                            <span class="fa fa-pencil-square-o"></span>
-                                        </div>
-                                        <h4 class="number">04</h4>
-                                        <h4><a href="#url">UI/UX Design</a></h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
-                                            doloret quas saepe autem, dolor set.
-                                        </p>
-                                        <a href="#read" class="read">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="card">
-                                    <div class="box-wrap">
-                                        <div class="icon">
-                                            <span class="fa fa-laptop"></span>
-                                        </div>
-                                        <h4 class="number">05</h4>
-                                        <h4><a href="#url">Web Development</a></h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
-                                            doloret quas saepe autem, dolor set.
-                                        </p>
-                                        <a href="#read" class="read">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="card">
-                                    <div class="box-wrap">
-                                        <div class="icon">
-                                            <span class="fa fa-area-chart"></span>
-                                        </div>
-                                        <h4 class="number">06</h4>
-                                        <h4><a href="#url">Research & Analysis</a></h4>
-                                        <p>
-                                            Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
-                                            doloret quas saepe autem, dolor set.
-                                        </p>
-                                        <a href="#read" class="read">Read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-5 text-more">
-                    <p class="mt-4 pt-3 sample text-center">
-                        <a href="services.html">View All Services <span class="pl-2 fa fa-long-arrow-right"></span></a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+    @Html.Action("PartialReferences")
     <!-- //home page services section -->
     <!-- stats -->
     @Html.Action("PartialStatistics")
@@ -154,152 +35,9 @@ Author URL: http://w3layouts.com
     <!-- testimonials -->
     <section class="w3l-clients" id="clients">
         <!-- /grids -->
-        <div class="cusrtomer-layout py-5">
-            <div class="container py-lg-5 py-md-4">
-                <div class="heading text-center mx-auto">
-                    <h6 class="title-small text-center">Testimonials</h6>
-                    <h3 class="title-big mb-md-5 mb-4">What my clients think about Me </h3>
-                </div>
-                <!-- /grids -->
-                <div class="testimonial-width">
-                    <div id="owl-demo1" class="owl-carousel owl-theme mb-4">
-                        <div class="item">
-                            <div class="testimonial-content">
-                                <div class="testimonial">
-                                    <blockquote>
-                                        <q>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                            Dolores molestias adipisci dolor sit amet!.
-                                        </q>
-                                    </blockquote>
-                                    <div class="testi-des">
-                                        <div class="test-img">
-                                            <img src="assets/images/team1.jpg" class="img-fluid" alt="client-img">
-                                        </div>
-                                        <div class="peopl align-self">
-                                            <h3>John wilson</h3>
-                                            <p class="indentity">Seattle, Washington</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-content">
-                                <div class="testimonial">
-                                    <blockquote>
-                                        <q>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                            Dolores molestias adipisci dolor sit amet!.
-                                        </q>
-                                    </blockquote>
-                                    <div class="testi-des">
-                                        <div class="test-img">
-                                            <img src="assets/images/team2.jpg" class="img-fluid" alt="client-img">
-                                        </div>
-                                        <div class="peopl align-self">
-                                            <h3>Julia sakura</h3>
-                                            <p class="indentity">Seattle, Washington</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-content">
-                                <div class="testimonial">
-                                    <blockquote>
-                                        <q>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                            Dolores molestias adipisci dolor sit amet!.
-                                        </q>
-                                    </blockquote>
-                                    <div class="testi-des">
-                                        <div class="test-img">
-                                            <img src="assets/images/team3.jpg" class="img-fluid" alt="client-img">
-                                        </div>
-                                        <div class="peopl align-self">
-                                            <h3>Roy Linderson</h3>
-                                            <p class="indentity">Seattle, Washington</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-content">
-                                <div class="testimonial">
-                                    <blockquote>
-                                        <q>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                            Dolores molestias adipisci dolor sit amet!.
-                                        </q>
-                                    </blockquote>
-                                    <div class="testi-des">
-                                        <div class="test-img">
-                                            <img src="assets/images/team4.jpg" class="img-fluid" alt="client-img">
-                                        </div>
-                                        <div class="peopl align-self">
-                                            <h3>Mike Thyson</h3>
-                                            <p class="indentity">Seattle, Washington</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-content">
-                                <div class="testimonial">
-                                    <blockquote>
-                                        <q>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                            Dolores molestias adipisci dolor sit amet!.
-                                        </q>
-                                    </blockquote>
-                                    <div class="testi-des">
-                                        <div class="test-img">
-                                            <img src="assets/images/team2.jpg" class="img-fluid" alt="client-img">
-                                        </div>
-                                        <div class="peopl align-self">
-                                            <h3>Laura gill</h3>
-                                            <p class="indentity">Seattle, Washington</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimonial-content">
-                                <div class="testimonial">
-                                    <blockquote>
-                                        <q>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit beatae laudantium
-                                            voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
-                                            Dolores molestias adipisci dolor sit amet!.
-                                        </q>
-                                    </blockquote>
-                                    <div class="testi-des">
-                                        <div class="test-img">
-                                            <img src="assets/images/team3.jpg" class="img-fluid" alt="client-img">
-                                        </div>
-                                        <div class="peopl align-self">
-                                            <h3>Smith Johnson</h3>
-                                            <p class="indentity">Seattle, Washington</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- /grids -->
-        </div>
+
+        @Html.Action("PartialProjects")
+
         <!-- //grids -->
     </section>
     <!-- //testimonials -->
@@ -309,10 +47,10 @@ Author URL: http://w3layouts.com
     <!-- freelance hire me -->
     <section class="w3l-grid-quote text-center py-5">
         <div class="container py-3">
-            <h6 class="title-small">Get in touch</h6>
-            <h3 class="title-big mb-md-5 mb-4">Let's start a Project! Hire Me.</h3>
-            <a href="contact.html" class="btn btn-style btn-primary mr-2">Hire Me </a>
-            <a href="contact.html" class="btn btn-style btn-outline-primary">Get in touch</a>
+            <h6 class="title-small">İletişime Geçin</h6>
+          
+            
+            <a href="/Contact/Index" class="btn btn-style btn-outline-primary">Get in touch</a>
         </div>
     </section>
     <!-- //freelance hire me -->
@@ -366,7 +104,7 @@ Author URL: http://w3layouts.com
 
     <script src="~/Templates/alexander-starter/assets/js/jquery-3.3.1.min.js"></script><!-- default jQuery -->
     <!-- /typig-text-->
-    
+
     <script>
         const typedTextSpan = document.querySelector(".typed-text");
         const cursorSpan = document.querySelector(".cursor");
@@ -379,7 +117,7 @@ Author URL: http://w3layouts.com
         textArray.push('@item');
       </text>
    }
-       
+
         console.log(textArray)
 
         const typingDelay = 200;

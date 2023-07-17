@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace Casgem_Portfolio.Controllers
 {
+    [Authorize]
     public class StatisticsController : Controller
     {
         CasgemPortfolioEntities db = new CasgemPortfolioEntities();
@@ -23,18 +24,18 @@ namespace Casgem_Portfolio.Controllers
                 x.EmployeeName + " " + x.EmployeeSurname
             ).FirstOrDefault();
 
-            ViewBag.totalCityCount = db.TblEmployee.Select(x=>x.EmployeeCity).Distinct().Count();
+            ViewBag.totalCityCount = db.TblEmployee.Select(x => x.EmployeeCity).Distinct().Count();
 
             ViewBag.avgEmployeeSalary = db.TblEmployee.Average(x => x.EmployeeSalary);
-           
-            ViewBag.countSoftwareDeparment = db.TblEmployee.Where(x => x.EmployeeDepartment == db.TblDepartment.Where(y=>y.DepartmentName=="Muhasebe").Select(z=>z.DepartmentID).FirstOrDefault()).Count();
+
+            ViewBag.countSoftwareDeparment = db.TblEmployee.Where(x => x.EmployeeDepartment == db.TblDepartment.Where(y => y.DepartmentName == "Muhasebe").Select(z => z.DepartmentID).FirstOrDefault()).Count();
 
             //Şehri ankara veya adana olanların toplam maaşı
             ViewBag.totalAnkaraAdanaSalary = db.TblEmployee.Where(x => x.EmployeeCity == "Ankara" || x.EmployeeCity == "Adana").Sum(y => y.EmployeeSalary);
 
 
-            ViewBag.ankaraMuhasebeToplamMaaş = db.TblEmployee.Where(x => x.EmployeeCity == "Ankara" && x.EmployeeDepartment == db.TblDepartment.Where(y => y.DepartmentName == "Muhasebe").Select(z=>z.DepartmentID).FirstOrDefault()).Sum(a=>a.EmployeeSalary);
-            
+            ViewBag.ankaraMuhasebeToplamMaaş = db.TblEmployee.Where(x => x.EmployeeCity == "Ankara" && x.EmployeeDepartment == db.TblDepartment.Where(y => y.DepartmentName == "Muhasebe").Select(z => z.DepartmentID).FirstOrDefault()).Sum(a => a.EmployeeSalary);
+
             return View();
         }
     }

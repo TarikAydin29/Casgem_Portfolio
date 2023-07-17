@@ -129,6 +129,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\CVController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\FeatureController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -158,6 +159,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\sysdiagrams.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Entities\TblAdmins.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Entities\TblDepartment.cs">
@@ -199,6 +203,8 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\car.jpg" />
+    <Content Include="Images\Tarik.jpeg" />
+    <Content Include="Images\web-development_2888407.png" />
     <Content Include="Lib\bootstrap\css\bootstrap-grid.css" />
     <Content Include="Lib\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="Lib\bootstrap\css\bootstrap-grid.rtl.css" />
@@ -413,6 +419,10 @@
     <Content Include="Templates\sidebar-01\js\jquery.min.js" />
     <Content Include="Templates\sidebar-01\js\main.js" />
     <Content Include="Templates\sidebar-01\js\popper.js" />
+    <Content Include="Templates\starter\css\style.css" />
+    <Content Include="Templates\starter\fonts\fontawesome-webfont.svg" />
+    <Content Include="Templates\starter\index.html" />
+    <Content Include="Templates\starter\starter-license-W3Layouts.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -544,7 +554,6 @@
     <Content Include="Views\Message\Index.cshtml" />
     <Content Include="Views\Message\MessageDetails.cshtml" />
     <Content Include="Views\References\Index.cshtml" />
-    <Content Include="Views\Project\Index.cshtml" />
     <Content Include="Views\Portfolio\Index.cshtml" />
     <Content Include="Views\Portfolio\PartialHead.cshtml" />
     <Content Include="Views\Portfolio\PartialNavbar.cshtml" />
@@ -556,9 +565,22 @@
     <Content Include="Views\Statistics\Index.cshtml" />
     <Content Include="Views\Portfolio\PartialSelfInfo.cshtml" />
     <Content Include="Views\Portfolio\PartialVideo.cshtml" />
+    <Content Include="Views\Portfolio\PartialProjects.cshtml" />
+    <Content Include="Views\Project\Index.cshtml" />
+    <Content Include="Views\Project\Add.cshtml" />
+    <Content Include="Views\Project\Edit.cshtml" />
+    <Content Include="Templates\starter\fonts\fontawesome-webfont.eot" />
+    <Content Include="Templates\starter\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Templates\starter\fonts\fontawesome-webfont.woff" />
+    <Content Include="Templates\starter\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Templates\starter\fonts\FontAwesome.otf" />
+    <Content Include="Views\CV\Index.cshtml" />
+    <Content Include="Views\CV\Edit.cshtml" />
+    <Content Include="Views\Portfolio\PartialReferences.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

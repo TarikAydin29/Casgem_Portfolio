@@ -15,7 +15,7 @@ namespace Casgem_Portfolio.Controllers
         public ActionResult Index()
         {
             var items = db.TblSkills.ToList();
-           ViewBag.skillsArray = items.Select(x => x.Name).ToArray();
+            ViewBag.skillsArray = items.Select(x => x.Name).ToArray();
             return View();
         }
         public PartialViewResult PartialHead()
@@ -49,11 +49,22 @@ namespace Casgem_Portfolio.Controllers
         }
         public PartialViewResult PartialSelfInfo()
         {
-            return PartialView();
+            List<TblReference> r= db.TblReference.ToList();
+            return PartialView(r);
         }
         public PartialViewResult PartialVideo()
         {
             return PartialView();
+        }
+        public PartialViewResult PartialProjects()
+        {
+            var projects = db.TblProject.ToList();
+            return PartialView(projects);
+        }
+        public PartialViewResult PartialReferences()
+        {
+            List<TblReference> r = db.TblReference.ToList();
+            return PartialView(r);
         }
     }
 }

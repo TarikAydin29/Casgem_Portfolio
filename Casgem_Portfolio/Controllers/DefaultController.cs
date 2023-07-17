@@ -6,6 +6,8 @@ using System.Web.Mvc;
 
 namespace Casgem_Portfolio.Controllers
 {
+    [Authorize]
+
     public class DefaultController : Controller
     {
         // GET: Default

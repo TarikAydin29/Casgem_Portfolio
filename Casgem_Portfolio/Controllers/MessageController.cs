@@ -7,6 +7,7 @@ using Casgem_Portfolio.Models.Entities;
 
 namespace Casgem_Portfolio.Controllers
 {
+    [Authorize]
     public class MessageController : Controller
     {
 
